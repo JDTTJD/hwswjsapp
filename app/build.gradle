@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "26.0.1"
+
+    defaultConfig {
+        applicationId "com.lxm.photo"
+        minSdkVersion 9
+        targetSdkVersion 19
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    android{compileOptions.encoding="GBK"}
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:19.1.0'
+    compile files('libs/ftp4j-1.7.2.jar')
+    compile files('libs/ksoap2-android-assembly-2.5.2-jar-with-dependencies.jar')
+    compile files('libs/locSDK_4.2.jar')
+}

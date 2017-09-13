@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:configChanges="orientation|keyboard|keyboardHidden"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDesc" />
+	<EditText 
+	        android:id="@+id/txtDesc"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="此处输入图片描述..."/>
+
+	<Button
+	    android:id="@+id/btnCANCLE"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:onClick="CancleBtnClick"
+	    android:text="取消" />
+
+	<Button
+	    android:id="@+id/btnOK"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/btnCANCLE"
+	    android:onClick="OkBtnClick"
+	    android:text="确定" />
+
+</RelativeLayout>
